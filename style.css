@@ -1,0 +1,329 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #171717;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+li, a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #199AFC;
+    text-decoration: none;
+}
+
+header{
+    top: 0;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to right, #171717, #15181a, #171717);
+    z-index: 100;
+    transition: all 0.4s ease 0s;
+}
+
+header a{
+    text-shadow: 0 0 15px #ffffff3a;
+}
+
+header:hover{
+    background-color: #171717;
+}
+
+p:hover, label:hover, h1:hover, h2:hover, h3:hover{
+    cursor: default;
+}
+
+.logo{
+    cursor: pointer;
+    width: 80px;
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li:hover a:hover{
+    color: #56b6ff;
+    font-size: 24px;
+}
+
+#ctaBTN{
+    margin-left: 80px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #199AFC;
+    color: white;
+    text-decoration: none;
+
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#ctaBTN:hover{
+    transform:scale(1.1);
+}
+
+#home{
+    background-image: url("resources/bg.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    width: 100%;
+}
+
+#home h1{
+    color:#199AFC;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#home h2{
+    margin-top: -10px;
+    margin-bottom: 100px;
+    font-family:"Poppins", sans-serif;
+    font-weight: 400;
+    color: #1576c0;
+}
+
+#foto-perfil{
+    margin-left: 46.5%;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    border-radius: 100%;
+    width: 140px;
+    background-color: #171717;
+}
+
+/* SECTION: Trabajos */
+
+#trabajo-pornhub{
+    box-shadow: 0 0 30px #ffffff10;
+}
+
+#trabajo-xvideos{
+    box-shadow: 0 0 30px #ffffff10;
+}
+
+#trabajos{
+    text-align: center;
+}
+
+#trabajos h2{
+    font-size: 45px;
+    text-decoration: overline;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    font-family:"Poppins", sans-serif;
+    color: #1576c0;
+}
+
+#trabajos div{
+    display: inline-block;
+    background-color: #1b1b1b;
+    width: 400px;
+    margin: 0 50px 0 50px;
+    padding-bottom: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+#trabajos div:hover{
+    transform: scale(1.05);
+}
+
+#trabajos img{
+    width: 400px;
+}
+
+#trabajos h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#trabajos p{
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+#trabajos button{
+    margin-top: 40px;
+    width: 160px;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    transition: all 0.3s ease 0s
+}
+
+#trabajos button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ffffff15;
+    cursor:pointer;
+}
+
+#trabajo-pornhub h3{
+    color: #F7971E;
+}
+
+#trabajo-pornhub button{
+    background-color: #F7971E;
+}
+
+#trabajo-xvideos button{
+    background-color: #FF2100
+}
+
+#trabajo-xvideos h3{
+    color: #FF2100;
+}
+
+hr{
+    border: none;
+    height: 5px;
+    background: linear-gradient(to right, #095188, #0b83df, #095188);
+    position: relative;
+    width: 80%;
+    margin: 100px auto;
+}
+
+
+#habilidades{
+    text-align: center;
+}
+
+#habilidades h2{
+    font-size: 40px;
+    color: #1576c0;
+    text-decoration: underline;
+}
+
+#habilidades div{
+    display: inline-block;
+    margin: 30px 50px;
+    font-size: 90px;
+}
+
+#logo-css{
+    color: #264de4;
+}
+
+#logo-js{
+    color: #f0db4f;
+}
+
+#logo-react{
+    color: #61dbfb;
+}
+
+#logo-python{
+    color: #4584b6;
+}
+
+
+/* ANIMACIONES */
+
+@keyframes show-1{
+    from{
+        opacity: 0;
+        scale: 80%;
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@keyframes show-2{
+    from{
+        opacity: 0;
+        scale: 80%;
+        margin-top: 200px;
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+        margin-top: 0px;
+    }
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* APLICAR ANIMACIONES */
+
+body{
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+}
+
+
+#trabajos h2{
+    view-timeline-name: --trabajos;
+    view-timeline-axis: block;
+
+    animation-timeline: --trabajos;
+    animation-name: show-2;
+
+    animation-range: entry 25% cover 90%;
+    animation-fill-mode: both;
+}
+
+#trabajo-pornhub, #trabajo-xvideos{
+
+    view-timeline-name: --trabajo;
+    view-timeline-axis: block;
+
+    animation-timeline: --trabajo;
+    animation-name: show-1;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+

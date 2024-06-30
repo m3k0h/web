@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <header class="nav">
+        <img class="logo" src="resources/logo.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+            </ul>
+        </nav>
+
+        <button onclick="window.location.href = '   contact.html'" id="ctaBTN">Contact</button>
+    </header>
+       
+    <section id="home">
+        <h1>Portfolio Personal</h1>
+        <h2>Ing. Castro Santiago</h2>
+    </section>
+
+    <img src="resources/logo.png" alt="Foto de perfil" id="foto-perfil">
+
+    <main>
+
+        <section id="trabajos">
+            <h2>Mis Trabajos</h2>
+
+            <div id="trabajo-pornhub">
+                <figure><img src="resources/pornhub-logo.jpeg" alt="Logo de PornHUB"></figure>
+                <h3>PornHUB</h3>
+                <p>Pornhub es uno de los sitios web de entretenimiento para adultos más populares y conocidos en el mundo. Fundado en 2007, ofrece una amplia variedad de contenido pornográfico, incluyendo videos de usuarios, producciones profesionales, y contenido exclusivo. El sitio es conocido por su gran biblioteca de videos categorizados, facilidad de uso, y por implementar tecnologías avanzadas para mejorar la experiencia del usuario.</p>
+                <button onmousedown="sonido.play()">Entrar</button>
+            </div>  
+            
+            <div id="trabajo-xvideos">
+                <figure><img src="resources/XVideos-logo.jpg" alt="Logo de XVideos"></figure>
+                <h3>XVideos</h3>
+                <p>Xvideos es una de las plataformas de contenido para adultos más grandes y visitadas en internet. Lanzado en 2007, ofrece una extensa colección de videos pornográficos de diversas categorías y estilos, permitiendo a los usuarios subir y compartir su propio contenido. Xvideos es reconocido por su interfaz sencilla y su enorme cantidad de videos disponibles, atrayendo a una audiencia global.</p>
+                <button onmousedown="sonido.play()">Entrar</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="habilidades">
+            <h2>Skills</h2>
+            <div id="logo-css">
+                <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+            <div id="logo-js">
+                <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+
+            <div id="logo-react">
+                <ion-icon name="logo-react"></ion-icon>
+            </div>
+
+            <div id="logo-python">
+                <ion-icon name="logo-python"></ion-icon>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

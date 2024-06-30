@@ -1,0 +1,9 @@
+body{
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating body{
+    opacity: 0;
+    
+}

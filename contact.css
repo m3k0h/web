@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #171717;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+li, a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #199AFC;
+    text-decoration: none;
+}
+
+header{
+    top: 0;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to right, #171717, #15181a, #171717);
+    z-index: 100;
+    transition: all 0.4s ease 0s;
+}
+
+header a{
+    text-shadow: 0 0 15px #ffffff3a;
+}
+
+header:hover{
+    background-color: #171717;
+}
+
+p:hover, label:hover, h1:hover, h2:hover, h3:hover{
+    cursor: default;
+}
+
+.logo{
+    cursor: pointer;
+    width: 80px;
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li:hover a:hover{
+    color: #56b6ff;
+    font-size: 24px;
+}
+
+#ctaBTN{
+    margin-left: 80px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #199AFC;
+    color: white;
+    text-decoration: none;
+
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#ctaBTN:hover{
+    transform:scale(1.1);
+}
+
+body{
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
